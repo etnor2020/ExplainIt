@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ExplainIt</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+    <!-- NAVIGATION -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            ExplainIt
+        </div>
+
+
+        <div class="nav-links">
+
+            <a href="#">
+                Home
+            </a>
+
+            <a href="#uploadSection">
+                Prepare
+            </a>
+
+            <a href="#nextSection">
+                Practice
+            </a>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- MAIN WEBSITE -->
+
+    <main>
+
+
+        <!-- HERO SECTION -->
+
+        <section class="hero">
+
+            <p class="tagline">
+                PRESENT WITH CONFIDENCE
+            </p>
+
+
+            <h1>
+                Don't just memorize
+                <br>
+                <span>understand it.</span>
+            </h1>
+
+
+            <p class="description">
+
+                Upload your presentation and rubric.
+                ExplainIt helps you understand your material,
+                check your requirements, and practice presenting.
+
+            </p>
+
+
+            <button id="startButton">
+
+                Start Preparing →
+
+            </button>
+
+        </section>
+
+
+
+        <!-- UPLOAD SECTION -->
+
+        <section
+            class="upload-section"
+            id="uploadSection"
+        >
+
+            <h2>
+                Prepare your presentation
+            </h2>
+
+
+            <p>
+                Upload your presentation and your teacher's rubric.
+            </p>
+
+
+
+            <div class="upload-container">
+
+
+                <!-- PRESENTATION -->
+
+                <div class="upload-box">
+
+                    <div class="upload-icon">
+                        📊
+                    </div>
+
+
+                    <h3>
+                        Presentation
+                    </h3>
+
+
+                    <p>
+                        Upload your PDF presentation
+                    </p>
+
+
+                    <input
+                        type="file"
+                        id="presentationFile"
+                        accept=".pdf"
+                    >
+
+
+                    <label for="presentationFile">
+                        Choose File
+                    </label>
+
+
+                    <p id="presentationName"></p>
+
+                </div>
+
+
+
+                <!-- RUBRIC -->
+
+                <div class="upload-box">
+
+                    <div class="upload-icon">
+                        📋
+                    </div>
+
+
+                    <h3>
+                        Rubric
+                    </h3>
+
+
+                    <p>
+                        Upload your teacher's rubric
+                    </p>
+
+
+                    <input
+                        type="file"
+                        id="rubricFile"
+                        accept=".pdf"
+                    >
+
+
+                    <label for="rubricFile">
+                        Choose File
+                    </label>
+
+
+                    <p id="rubricName"></p>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- CONTINUE -->
+
+            <button id="prepareButton">
+
+                Continue →
+
+            </button>
+
+
+        </section>
+
+
+
+        <!-- RESULTS SECTION -->
+
+        <section
+            class="next-section"
+            id="nextSection"
+        >
+
+
+            <!-- RESULTS HEADER -->
+
+            <div class="results-header">
+
+                <p class="tagline">
+                    YOUR PRESENTATION COACH
+                </p>
+
+                <h2>
+                    You're ready to prepare! 🎉
+                </h2>
+
+                <p id="fileSummary">
+                    Your files have been successfully read.
+                </p>
+
+            </div>
+
+
+
+            <!-- UNDERSTANDING SECTION -->
+
+            <div class="understanding-section">
+
+                <p class="tagline">
+                    UNDERSTAND YOUR MATERIAL
+                </p>
+
+                <h2>
+                    What do I need to know?
+                </h2>
+
+                <p class="section-description">
+
+                    Before you practice presenting, make sure you
+                    understand the important ideas in your presentation.
+
+                </p>
+
+
+                <div id="keyPoints">
+
+
+                    <div class="key-point">
+
+                        <span class="number">
+                            1
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Your presentation content
+                            </h3>
+
+                            <p>
+                                We'll identify the important ideas
+                                from your presentation here.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="key-point">
+
+                        <span class="number">
+                            2
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Important information
+                            </h3>
+
+                            <p>
+                                Key information from your slides
+                                will appear here.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="key-point">
+
+                        <span class="number">
+                            3
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Things to remember
+                            </h3>
+
+                            <p>
+                                Important concepts you should
+                                understand before presenting.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PRESENTATION AND RUBRIC -->
+
+            <div class="guide-grid">
+
+
+                <!-- PRESENTATION -->
+
+                <div class="guide-card">
+
+                    <div class="guide-icon">
+                        📊
+                    </div>
+
+                    <h3>
+                        Your Presentation
+                    </h3>
+
+                    <p>
+                        This is the information we found
+                        in your presentation.
+                    </p>
+
+                    <div
+                        id="presentationText"
+                        class="document-text"
+                    >
+
+                        Your presentation text will appear here.
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- RUBRIC -->
+
+                <div class="guide-card">
+
+                    <div class="guide-icon">
+                        📋
+                    </div>
+
+                    <h3>
+                        Your Rubric
+                    </h3>
+
+                    <p>
+                        These are the requirements your
+                        presentation needs to meet.
+                    </p>
+
+                    <div
+                        id="rubricText"
+                        class="document-text"
+                    >
+
+                        Your rubric text will appear here.
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- RUBRIC CHECKLIST -->
+
+            <div class="rubric-check-section">
+
+                <p class="tagline">
+                    CHECK YOUR REQUIREMENTS
+                </p>
+
+                <h2>
+                    📋 Rubric Checklist
+                </h2>
+
+                <p class="section-description">
+
+                    Make sure your presentation covers the
+                    requirements from your teacher's rubric.
+
+                </p>
+
+
+                <div id="rubricChecklist">
+
+
+                    <div class="rubric-item">
+
+                        <input
+                            type="checkbox"
+                        >
+
+                        <span>
+                            Review your rubric requirements
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PRACTICE PREVIEW -->
+
+            <div class="practice-preview">
+
+                <div>
+
+                    <p class="tagline">
+                        NEXT STEP
+                    </p>
+
+                    <h2>
+                        Ready to explain it back?
+                    </h2>
+
+                    <p>
+
+                        Once you understand your material,
+                        ExplainIt will help you practice
+                        explaining it without simply
+                        memorizing your slides.
+
+                    </p>
+
+                </div>
+
+
+                <button id="practiceButton">
+
+                    Start Explain It Back →
+
+                </button>
+
+            </div>
+
+
+
+            <!-- EXPLAIN IT BACK -->
+
+            <div
+                id="practiceArea"
+                class="practice-area"
+            >
+
+                <p class="tagline">
+                    EXPLAIN IT BACK
+                </p>
+
+                <h2>
+                    Can you explain your presentation?
+                </h2>
+
+                <p id="practiceQuestion">
+
+                    Explain the main idea of your presentation
+                    without looking at your slides.
+
+                </p>
+
+
+                <textarea
+                    id="practiceAnswer"
+                    placeholder="Type your explanation here..."
+                ></textarea>
+
+
+                <button id="checkAnswerButton">
+
+                    Check My Explanation →
+
+                </button>
+
+
+                <div
+                    id="practiceFeedback"
+                    class="practice-feedback"
+                ></div>
+
+            </div>
+
+
+
+            <!-- PRACTICE QUESTIONS -->
+
+<div
+id="questionsArea"
+class="questions-area"
+>
+
+<p class="tagline">
+    PRACTICE QUESTIONS
+</p>
+
+<h2>
+    🎤 Test yourself
+</h2>
+
+<p class="section-description">
+    Practice answering questions about your
+    presentation before you have to present it.
+</p>
+
+
+<!-- QUESTION PROGRESS -->
+
+<div class="question-progress">
+
+    <div class="question-progress-top">
+
+        <span>
+            Question
+            <strong id="questionNumber">
+                1
+            </strong>
+            of
+            <strong id="totalQuestions">
+                1
+            </strong>
+        </span>
+
+        <span id="progressPercent">
+            0%
+        </span>
+
+    </div>
+
+
+    <div class="progress-bar">
+
+        <div
+            id="progressFill"
+            class="progress-fill"
+        ></div>
+
+    </div>
+
+</div>
+
+
+
+<!-- QUESTION CARD -->
+
+<div class="question-card">
+
+    <div class="question-icon">
+        🎤
+    </div>
+
+
+    <h3 id="questionText">
+
+        What is the main idea of your presentation?
+
+    </h3>
+
+
+    <p class="question-instruction">
+
+        Explain your answer in your own words.
+        Don't just repeat your slides.
+
+    </p>
+
+
+    <textarea
+        id="questionAnswer"
+        placeholder="Type your answer here..."
+    ></textarea>
+
+
+    <button id="submitQuestionButton">
+
+        Check Answer →
+
+    </button>
+
+
+    <div
+        id="questionFeedback"
+        class="question-feedback"
+    ></div>
+
+
+    <button
+        id="nextQuestionButton"
+        class="next-question-button"
+    >
+
+        Next Question →
+
+    </button>
+
+</div>
+
+</div>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            ExplainIt — Practice smarter. Present confidently.
+        </p>
+
+    </footer>
+
+
+
+    <!-- PDF READER -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+
+
+    <!-- OUR JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
